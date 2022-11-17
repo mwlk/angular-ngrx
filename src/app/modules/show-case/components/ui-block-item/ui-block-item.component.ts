@@ -18,10 +18,10 @@ export class UiBlockItemComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.showCase.getDataApi()
-      .subscribe((res) => {
-        this.listData = res
-      })
+    // this.showCase.getDataApi()
+    //   .subscribe((res) => {
+    //     this.listData = res
+    //   })
   }
 
 
