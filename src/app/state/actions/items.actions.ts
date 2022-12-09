@@ -5,7 +5,12 @@ export const loadItems = createAction(
   '[Item List] Load Items' //TODO
 );
 
-export const loadedItems = createAction(
+export const loadItemsSuccess = createAction(
   '[Item List] Loaded Success',
   props<{ items: ItemModel[] }>()
+);
+
+export const loadItemsError = createAction(
+  '[Item List] Loaded Error',
+  props<{ payload: any }>()
 );
